@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PropertyLink.ng</title>
+  <link rel="stylesheet" href="style.css" />  
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>PropertyLink</strong><span class="logo-extension">.ng</span></div>
+    <nav>
+      <a href="#">Buy</a>
+      <a href="#">Sell</a>
+      <a href="#">Rent</a>
+      <a href="#">About us</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="register-btn">Register</a>
+      <a href="#" class="login-btn">Log in</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Unlock the door to your perfect property!</h1>
+      <p>We connect buyers, renters and landlords by simplifying their property search process and fostering transparent and efficient transactions, providing you the perfect property!</p>
+      <div class="search-container">
+        <div class="search-bar">
+          <input type="text" id="location" placeholder="Enter your location..." />
+          <button onclick="findProperty()">Find property</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <h2>30K+</h2>
+      <p>Properties sold</p>
+    </div>
+    <div class="stat">
+      <h2>10+</h2>
+      <p>Years of experience</p>
+    </div>
+    <div class="stat">
+      <h2>12K+</h2>
+      <p>Clients</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

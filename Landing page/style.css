@@ -1,0 +1,161 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: #111;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.logo {
+  font: bold 1.5rem/1 inherit;
+}
+
+.logo-extension { color: #6366f1; }
+
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  display: flex;
+  gap: 30px;
+}
+
+header nav a, .login-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover, .login-btn:hover { color: #6366f1; }
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.register-btn {
+  background: #6366f1;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover { background: #5855eb; }
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: url('real-estate.jpg') center/cover no-repeat;
+  padding-left: 40px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 600px;
+  padding-right: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.search-container { margin-top: 30px; }
+
+.search-bar {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-bar input::placeholder { color: rgba(255, 255, 255, 0.7); }
+
+.search-bar button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font: 500 1rem inherit;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover { background: #5855eb; }
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  color: #1f2937;
+  padding: 40px 60px;
+  margin: -80px auto 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  position: relative;
+  max-width: 1000px;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.stat h2 {
+  font: bold 2.5rem/1 inherit;
+  color: #6366f1;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  font: 500 1rem inherit;
+  color: #6b7280;
+}
