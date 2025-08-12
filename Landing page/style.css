@@ -180,7 +180,6 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   letter-spacing: 0.2px;
 }
 
-/* Properties Section */
 .properties {
   padding: 60px 0;
   background: #DCDDE8;
@@ -342,7 +341,6 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   background: #000073;
 }
 
-/* Newsletter Section */
 .newsletter {
   background: #DCDDE8;
   padding: 60px 0;
@@ -404,7 +402,6 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   background: #142a4a;
 }
 
-/* Footer */
 .site-footer {
   background: #313266;
   color: #fff;
@@ -531,8 +528,6 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   color: #a0a0a0;
   font-size: 0.9rem;
 }
-
-/* Responsive adjustments */
 @media (max-width: 992px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
@@ -587,6 +582,3 @@ header nav a:hover, .login-btn:hover { color: #000073; }
     font-size: 1rem;
   }
 }
-
-/* Add Font Awesome for icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
