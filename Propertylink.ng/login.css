@@ -1,0 +1,111 @@
+/* Background image */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('img.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Dark overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Card */
+.login-container {
+    background: #f3f3fa;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* Google button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.google-btn:hover {
+    background: #f1f1f1;
+}
+
+.google-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #c0392b;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #00005c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #000042;
+}
+
+/* Sign up text */
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #00005c;
+    text-decoration: none;
+}
