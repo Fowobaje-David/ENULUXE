@@ -142,6 +142,8 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   width: calc(100% - 80px);
   position: relative;
   z-index: 5;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .stat {
@@ -149,6 +151,15 @@ header nav a:hover, .login-btn:hover { color: #000073; }
   flex: 1;
   padding: 0 20px;
   position: relative;
+}
+
+.stat .countup {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a365d;
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
 }
 
 .stat:not(:last-child)::after {

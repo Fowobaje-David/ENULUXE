@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PropertyLink.ng</title>
-  <link rel="stylesheet" href="style.css" />  
+  <link rel="stylesheet" href="LandingPage.css" />  
   <link rel="icon" type="image/png" href="propertylink.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -19,7 +19,7 @@
     </nav>
     <div class="auth-buttons">
       <a href="Register.html" class="register-btn">Register</a>
-      <a href="#" class="login-btn">Log in</a>
+      <a href="login.html" class="login-btn">Log in</a>
     </div>
   </header>
 
@@ -39,16 +39,29 @@
 
   <div class="stats">
     <div class="stat">
-      <h2>30K+</h2>
-      <p>Properties sold</p>
+      <span class="countup"
+          data-from="0"
+          data-to="30000"
+          data-duration="3200"
+          data-delay="200"
+          data-separator=",">0</span>
+          <p> + Properties sold</p>
     </div>
     <div class="stat">
-      <h2>10+</h2>
-      <p>Years of experience</p>
+     <span class="countup"
+          data-from="0"
+          data-to="10"
+          data-duration="3600"
+          data-delay="0">0</span>
+    <p>Years of experience</p> 
     </div>
     <div class="stat">
-      <h2>12K+</h2>
-      <p>Clients</p>
+         <span class="countup"
+          data-from="500"
+          data-to="12000"
+          data-duration="3200"
+          data-direction="down">500</span>
+    <p> + Clients</p>
     </div>
   </div>
   <section class="properties">
