@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-  font: bold 1.5rem/1 inherit;
+  font: bold 1.5rem 'Segoe UI', sans-serif;
 }
 
 .logo-extension { color: #000073; }
