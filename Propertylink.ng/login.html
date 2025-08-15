@@ -1,23 +1,56 @@
 <!--</body>-->
 
 <!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>PropertyLink.ng - Login</title>-->
+<!--    <link rel="stylesheet" href="login.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="overlay">-->
+<!--    <div class="login-container">-->
+<!--        <h2>Sign in to <strong>PropertyLink.ng</strong></h2>-->
+
+<!--        <a href="https://accounts.google.com/o/oauth2/v2/auth" class="google-btn">-->
+<!--            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">-->
+<!--            Continue with Google-->
+<!--        </a>-->
+
+<!--        <div class="divider">or</div>-->
+
+<!--        <form>-->
+<!--            <input type="text" placeholder="Email address or phone number..." required>-->
+<!--            <input type="password" placeholder="Password..." required>-->
+<!--            <a href="#" class="forgot-password">Forgot password?</a>-->
+<!--            <button type="submit">Log in</button>-->
+<!--        </form>-->
+
+<!--        <p class="signup-text">Don’t have an account? <a href="Register.html">Create an account</a></p>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>PropertyLink.ng - Login</title>
     <link rel="stylesheet" href="login.css">
+
+    <!-- Load Google Identity Services SDK -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 <div class="overlay">
     <div class="login-container">
         <h2>Sign in to <strong>PropertyLink.ng</strong></h2>
 
-        <a href="https://accounts.google.com/o/oauth2/v2/auth" class="google-btn">
-            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">
-            Continue with Google
-        </a>
+        <!-- Google Sign-In Button Container -->
+        <div id="g_id_signin"></div>
 
         <div class="divider">or</div>
 
@@ -31,5 +64,26 @@
         <p class="signup-text">Don’t have an account? <a href="Register.html">Create an account</a></p>
     </div>
 </div>
+
+<!-- Google Sign-In Initialization -->
+<script>
+    const CLIENT_ID = '746210027077-qj0dikikmqi7cru23fv9v7h42fn5u9k4.apps.googleusercontent.com';
+
+    window.onload = function () {
+        google.accounts.id.initialize({
+            client_id: CLIENT_ID,
+            callback: () => {
+                // Redirect straight to home page after Google sign-in
+                window.location.href = 'index.html';
+            },
+            ux_mode: 'popup'
+        });
+
+        google.accounts.id.renderButton(
+            document.getElementById('g_id_signin'),
+            { theme: 'outline', size: 'large', text: 'signin_with', shape: 'pill', width: 320 }
+        );
+    };
+</script>
 </body>
 </html>
